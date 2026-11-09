@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Catàleg d'episodis de La Sotana.">
+  <title>La Sotana — Catàleg</title>
+  <link rel="icon" href="assets/spotify.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="La Sotana, inici">
+        <span class="brand-mark" aria-hidden="true">LS</span>
+        <span class="brand-copy">
+          <strong>LA SOTANA</strong>
+          <small>CATÀLEG D'EPISODIS</small>
+        </span>
+      </a>
+      <p class="header-note">Tots els programes, en un sol lloc.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">L'ARXIU</p>
+      <h1 id="page-title">Tots els episodis.</h1>
+      <p class="intro-copy">Busca, filtra i recupera qualsevol programa de La Sotana.</p>
+    </section>
+
+    <section class="filters" aria-label="Filtres del catàleg">
+      <label class="season-filter" for="season-filter">
+        <span>Temporada</span>
+        <select id="season-filter">
+          <option value="all">Totes les temporades</option>
+        </select>
+      </label>
+
+      <button id="sort-button" class="sort-button" type="button" aria-label="Canvia l'ordre" aria-pressed="false">
+        <span class="sort-icon" aria-hidden="true">↓</span>
+        <span id="sort-label">Més nous primer</span>
+      </button>
+
+      <label class="guest-filter" for="guest-filter">
+        <input id="guest-filter" type="checkbox">
+        <span class="custom-checkbox" aria-hidden="true"></span>
+        <span>Només amb convidat</span>
+      </label>
+    </section>
+
+    <div class="results-bar">
+      <p id="results-count" aria-live="polite">Carregant programes…</p>
+    </div>
+
+    <section id="program-grid" class="program-grid" aria-label="Programes">
+      <p class="status-message">Carregant el catàleg…</p>
+    </section>
+
+    <p id="error-message" class="error-message" role="alert" hidden></p>
+  </main>
+
+  <footer class="site-footer">
+    <span>LA SOTANA</span>
+    <span>Catàleg independent d'episodis</span>
+  </footer>
+</body>
+</html>
