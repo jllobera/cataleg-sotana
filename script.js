@@ -1,4 +1,4 @@
-const DATA_URL = "data/programes.json";
+const DATA_URL = "programes.json";
 
 const seasonFilter = document.querySelector("#season-filter");
 const sortButton = document.querySelector("#sort-button");
