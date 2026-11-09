@@ -20,7 +20,7 @@ html { min-width: 320px; }
 body {
   margin: 0;
   background:
-    radial-gradient(ellipse at 50% -20%, rgba(233,255,79,.09), transparent 42rem),
+    radial-gradient(ellipse at 50% -20%, rgba(233,27,0,.09), transparent 42rem),
     var(--bg);
   color: var(--text);
   font-family: "DM Sans", system-ui, sans-serif;
