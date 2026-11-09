@@ -6,5 +6,69 @@
     "convidat": "Roger Coma",
     "youtube": "https://www.youtube.com/watch?v=HWSThzcxtxc",
     "spotify": "https://open.spotify.com/episode/59UZkQ5huECKxBqyHpZ4fM?si=2cc5a51861764a72"
+  },
+  {
+    "id": 425,
+    "temporada": "2026/27",
+    "data": "2026-10-26",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=zS5Zo5cJJ-Q",
+    "spotify": "https://open.spotify.com/episode/03XlIyjMngRNvAdGiFpB3e?si=811dab87691042b0"
+  },
+  {
+    "id": 424,
+    "temporada": "2026/27",
+    "data": "2026-10-19",
+    "convidat": "Albert Blaya",
+    "youtube": "https://www.youtube.com/watch?v=PpRx0a3kVWE",
+    "spotify": "https://open.spotify.com/episode/4UYHEJ3K5q8jf11c8E3jEt?si=8d6ee7e1ee3b4d28"
+  },
+  {
+    "id": 423,
+    "temporada": "2026/27",
+    "data": "2026-10-12",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=RStXmGq0lNI",
+    "spotify": "https://open.spotify.com/episode/1xrqFjy79UTea4GVVQ3go7?si=fa4747cedc8243da"
+  },
+  {
+    "id": 422,
+    "temporada": "2026/27",
+    "data": "2026-10-05",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=y_cSfcWOB6M",
+    "spotify": "https://open.spotify.com/episode/1KQycOBJDtCC9ek4mGl8uz?si=4e2b922b83944297"
+  },
+  {
+    "id": 421,
+    "temporada": "2026/27",
+    "data": "2026-09-28",
+    "convidat": "Joan Rusi",
+    "youtube": "https://www.youtube.com/watch?v=zyFo6RPmrD0",
+    "spotify": "https://open.spotify.com/episode/1KQycOBJDtCC9ek4mGl8uz?si=3e8938e126ae434a"
+  },
+  {
+    "id": 420,
+    "temporada": "2026/27",
+    "data": "2026-09-21",
+    "convidat": "Gerard Quintana",
+    "youtube": "https://www.youtube.com/watch?v=5tYXSiI8UL0",
+    "spotify": "https://open.spotify.com/episode/5pDT9rEmEpnBxmxRL4k8qJ?si=00758996eb254290"
+  },
+  {
+    "id": 419,
+    "temporada": "2026/27",
+    "data": "2026-09-14",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=MgqHJU3uiPM",
+    "spotify": "https://open.spotify.com/episode/4FDazsjuMym1CKMr6p1sng?si=13c878828e3f43c1"
+  },
+  {
+    "id": 418,
+    "temporada": "2026/27",
+    "data": "2026-09-07",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=EVMJCqFadYE",
+    "spotify": "https://open.spotify.com/episode/4CHgP7V8SrDjzJttpTrjMt?si=0acbca66137d4560"
   }
 ]
