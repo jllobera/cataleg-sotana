@@ -1,5 +1,8 @@
 const DATA_URL = "programes.json";
 
+const themeToggle = document.querySelector("#theme-toggle");
+const themeToggleLabel = document.querySelector("#theme-toggle-label");
+const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 const seasonFilter = document.querySelector("#season-filter");
 const guestSearch = document.querySelector("#guest-search");
 const sortButton = document.querySelector("#sort-button");
@@ -11,6 +14,50 @@ const errorMessage = document.querySelector("#error-message");
 
 let programs = [];
 let ascending = false;
+
+function applyTheme(theme) {
+  const isLight = theme === "light";
+
+  // Apply the theme to the entire document
+  document.documentElement.dataset.theme = isLight ? "light" : "dark";
+
+  // Update the switch state
+  themeToggle.setAttribute("aria-checked", String(isLight));
+
+  // Update the visible label
+  themeToggleLabel.textContent = isLight ? "Mode clar" : "Mode fosc";
+
+  // Update the browser's UI colour
+  themeColorMeta?.setAttribute(
+    "content",
+    isLight ? "#f5f3ef" : "#101010"
+  );
+}
+
+// Restore the previously selected theme
+let savedTheme = "dark";
+
+try {
+  savedTheme = localStorage.getItem("la-sotana-theme") || "dark";
+} catch (error) {
+  // If localStorage is unavailable, use dark mode
+}
+
+applyTheme(savedTheme === "light" ? "light" : "dark");
+
+// Toggle between dark and light mode
+themeToggle.addEventListener("click", () => {
+  const currentTheme = document.documentElement.dataset.theme;
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+  applyTheme(newTheme);
+
+  try {
+    localStorage.setItem("la-sotana-theme", newTheme);
+  } catch (error) {
+    // The theme still works for the current session
+  }
+});
 
 function normalizeText(value) {
   return String(value ?? "")
