@@ -21,6 +21,15 @@ function applyTheme(theme) {
   // Apply the theme to the entire document
   document.documentElement.dataset.theme = isLight ? "light" : "dark";
 
+  // Update La Sotana logos according to the selected theme
+  const logoPath = isLight
+    ? "assets/LaSotana.png"
+    : "assets/LaSotana_fosc.png";
+
+  document.querySelector("#brand-logo").src = logoPath;
+  document.querySelector("#favicon").href = logoPath;
+  document.querySelector("#apple-touch-icon").href = logoPath;
+
   // Update the switch state
   themeToggle.setAttribute("aria-checked", String(isLight));
 
