@@ -377,10 +377,11 @@ select { width: 100%; padding: 0 38px 0 12px; cursor: pointer; }
   letter-spacing: -.035em;
   overflow-wrap: anywhere;
 }
-.program-season {
+.program-date {
   flex: 0 0 auto;
   color: var(--muted);
   font-size: 10px;
+  white-space: nowrap;
 }
 .youtube-link {
   min-height: 100px;

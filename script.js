@@ -96,6 +96,14 @@ function safeHttpUrl(value) {
   }
 }
 
+function formatDate(dateString) {
+  if (typeof dateString !== "string") return "";
+  const match = dateString.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return "";
+  const [, year, month, day] = match;
+  return `${day}/${month}/${year}`;
+}
+
 function createProgramCard(program) {
   const card = document.createElement("article");
   card.className = "program-card";
@@ -110,10 +118,10 @@ function createProgramCard(program) {
     : "";
   title.textContent = `${program.id}${guest}`;
 
-  const season = document.createElement("span");
-  season.className = "program-season";
-  season.textContent = program.temporada || "";
-  heading.append(title, season);
+  const date = document.createElement("span");
+  date.className = "program-date";
+  date.textContent = formatDate(program.data);
+  heading.append(title, date);
 
   const youtubeUrl = safeHttpUrl(program.youtube);
   let youtube;
