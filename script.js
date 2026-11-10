@@ -1,6 +1,7 @@
 const DATA_URL = "programes.json";
 
 const seasonFilter = document.querySelector("#season-filter");
+const guestSearch = document.querySelector("#guest-search");
 const sortButton = document.querySelector("#sort-button");
 const sortLabel = document.querySelector("#sort-label");
 const guestFilter = document.querySelector("#guest-filter");
@@ -10,6 +11,14 @@ const errorMessage = document.querySelector("#error-message");
 
 let programs = [];
 let ascending = false;
+
+function normalizeText(value) {
+  return String(value ?? "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
 
 const youtubeIcon = `
   <svg class="youtube-icon" viewBox="0 0 24 18" aria-hidden="true">
@@ -106,10 +115,17 @@ function populateSeasons() {
 function renderPrograms() {
   const selectedSeason = seasonFilter.value;
   const onlyGuests = guestFilter.checked;
+  const searchTerm = normalizeText(guestSearch.value);
 
   const visiblePrograms = programs
     .filter(program => selectedSeason === "all" || program.temporada === selectedSeason)
     .filter(program => !onlyGuests || (typeof program.convidat === "string" && program.convidat.trim()))
+    .filter(program => {
+      if (!searchTerm) return true;
+
+      const guestName = normalizeText(program.convidat);
+      return guestName.includes(searchTerm);
+    })
     .sort((a, b) => ascending ? Number(a.id) - Number(b.id) : Number(b.id) - Number(a.id));
 
   programGrid.replaceChildren();
@@ -150,6 +166,7 @@ async function loadPrograms() {
 
 seasonFilter.addEventListener("change", renderPrograms);
 guestFilter.addEventListener("change", renderPrograms);
+guestSearch.addEventListener("input", renderPrograms);
 
 sortButton.addEventListener("click", () => {
   ascending = !ascending;

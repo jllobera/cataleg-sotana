@@ -99,6 +99,44 @@ h1 {
   background: rgba(25,25,25,.86);
 }
 
+.search-filter {
+  display: grid;
+  gap: 7px;
+  flex: 1 1 240px;
+  min-width: 220px;
+}
+
+.search-filter > span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.search-filter input {
+  width: 100%;
+  min-height: 43px;
+  padding: 0 12px;
+  border: 1px solid #3a3a3a;
+  border-radius: 9px;
+  background: #111;
+  color: var(--text);
+  font: 600 13px "DM Sans", sans-serif;
+  outline: none;
+  transition: border-color .18s, background .18s;
+}
+
+.search-filter input::placeholder {
+  color: #777;
+  font-weight: 400;
+}
+
+.search-filter input:focus {
+  border-color: var(--accent);
+  background: #151515;
+}
+
 .season-filter { display: grid; gap: 7px; min-width: 220px; }
 .season-filter > span {
   color: var(--muted);
@@ -294,6 +332,7 @@ select { width: 100%; padding: 0 38px 0 12px; cursor: pointer; }
   .header-note { display: none; }
   .intro { padding: 52px 0 29px; }
   .filters { align-items: stretch; padding: 13px; }
+  .search-filter { flex: 1 1 100%; }
   .season-filter { flex: 1 1 100%; }
   .sort-button { flex: 1; }
   .guest-filter { margin-left: 0; }
