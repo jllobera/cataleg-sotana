@@ -89,7 +89,7 @@ const spotifyIcon = `
 const ivooxIcon = `
   <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true">
     <circle cx="12" cy="12" r="11" fill="currentColor"/>
-    <path d="M9.5 7.5v9l7.5-4.5-7.5-4.5z" fill="#FFFFFF"/>
+    <path d="M9.5 7.5v9l7.5-4.5-7.5-4.5z"/>
   </svg>`;
 
 const applePodcastsIcon = `
