@@ -86,6 +86,19 @@ const spotifyIcon = `
     <path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm5.5 17.3a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.1-10.55-1.15a.75.75 0 1 1-.33-1.46c4.58-1.05 8.5-.6 11.66 1.34.35.22.46.68.25 1.02Zm1.47-3.26a.94.94 0 0 1-1.29.31c-3.23-1.99-8.15-2.57-11.97-1.4a.94.94 0 1 1-.55-1.8c4.36-1.32 9.77-.68 13.5 1.6.44.27.58.85.31 1.29Zm.13-3.4C15.23 8.3 8.8 8.08 5.07 9.22a1.13 1.13 0 1 1-.66-2.16c4.28-1.3 11.4-1.05 15.9 1.62a1.13 1.13 0 0 1-1.16 1.95Z"/>
   </svg>`;
 
+const ivooxIcon = `
+  <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="11" fill="currentColor"/>
+    <path d="M9 7.5a1.5 1.5 0 0 0-1.5 1.5v6a1.5 1.5 0 0 0 3 0V9A1.5 1.5 0 0 0 9 7.5Zm6 1a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Z" fill="#fff"/>
+  </svg>`;
+
+const applePodcastsIcon = `
+  <svg class="platform-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="1" y="1" width="22" height="22" rx="6" fill="currentColor"/>
+    <circle cx="12" cy="8" r="2" fill="#fff"/>
+    <path d="M10.1 11.1a2 2 0 0 0-1.6 2.2l.7 4.2a1.2 1.2 0 0 0 2.4-.2l-.3-2.5h1.4l-.3 2.5a1.2 1.2 0 0 0 2.4.2l.7-4.2a2 2 0 0 0-1.6-2.2 7 7 0 0 0-3.8 0Z" fill="#fff"/>
+  </svg>`;
+
 function safeHttpUrl(value) {
   if (typeof value !== "string" || !value.trim()) return null;
   try {
@@ -142,21 +155,47 @@ function createProgramCard(program) {
 
   const bottom = document.createElement("div");
   bottom.className = "card-bottom";
-  const spotifyUrl = safeHttpUrl(program.spotify);
-  if (spotifyUrl) {
-    const spotify = document.createElement("a");
-    spotify.className = "spotify-link";
-    spotify.href = spotifyUrl;
-    spotify.target = "_blank";
-    spotify.rel = "noopener noreferrer";
-    spotify.setAttribute("aria-label", `Escolta el programa ${program.id} a Spotify`);
-    spotify.innerHTML = `${spotifyIcon}<span>ESCOLTA A SPOTIFY</span>`;
-    bottom.append(spotify);
-  } else {
-    const unavailable = document.createElement("span");
-    unavailable.className = "no-spotify";
-    unavailable.textContent = "Spotify no disponible";
-    bottom.append(unavailable);
+
+  const platforms = [
+    {
+      field: "spotify",
+      label: "SPOTIFY",
+      icon: spotifyIcon,
+      className: "spotify-link"
+    },
+    {
+      field: "ivoox",
+      label: "IVO​​OX",
+      icon: ivooxIcon,
+      className: "ivoox-link"
+    },
+    {
+      field: "apple",
+      label: "APPLE PODCASTS",
+      icon: applePodcastsIcon,
+      className: "apple-podcasts-link"
+    }
+  ];
+
+  for (const platform of platforms) {
+    const url = safeHttpUrl(program[platform.field]);
+
+    if (!url) continue;
+
+    const link = document.createElement("a");
+    link.className = `platform-link ${platform.className}`;
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    link.setAttribute(
+      "aria-label",
+      `Escolta el programa ${program.id} a ${platform.label}`
+    );
+
+    link.innerHTML = `${platform.icon}<span>${platform.label}</span>`;
+
+    bottom.append(link);
   }
 
   card.append(heading, youtube, bottom);
