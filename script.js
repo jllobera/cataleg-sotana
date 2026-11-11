@@ -27,7 +27,7 @@ function applyTheme(theme) {
     : "assets/LaSotana_fosc.png";
 
   document.querySelector("#brand-logo").src = logoPath;
-  document.querySelector("#favicon").href = logoPath;
+  // document.querySelector("#favicon").href = logoPath;
   document.querySelector("#apple-touch-icon").href = logoPath;
 
   // Update the switch state
