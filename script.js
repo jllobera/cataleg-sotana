@@ -7,6 +7,7 @@ const seasonFilter = document.querySelector("#season-filter");
 const guestSearch = document.querySelector("#guest-search");
 const sortButton = document.querySelector("#sort-button");
 const sortLabel = document.querySelector("#sort-label");
+const seasonSeparatorsToggle = document.querySelector("#season-separators-toggle");
 const guestFilter = document.querySelector("#guest-filter");
 const programGrid = document.querySelector("#program-grid");
 const resultsCount = document.querySelector("#results-count");
@@ -241,7 +242,39 @@ function renderPrograms() {
   }
 
   const fragment = document.createDocumentFragment();
-  visiblePrograms.forEach(program => fragment.append(createProgramCard(program)));
+
+  if (seasonSeparatorsToggle.checked) {
+    let currentSeason = null;
+
+    visiblePrograms.forEach(program => {
+      const season = typeof program.temporada === "string" && program.temporada.trim()
+        ? program.temporada.trim()
+        : "Sense temporada";
+
+      // Add a heading whenever the season changes
+      if (season !== currentSeason) {
+        const separator = document.createElement("div");
+        separator.className = "season-heading";
+
+        const title = document.createElement("h2");
+        title.textContent = season === "Sense temporada"
+          ? season
+          : `Temporada ${season}`;
+
+        separator.append(title);
+        fragment.append(separator);
+
+        currentSeason = season;
+      }
+
+      fragment.append(createProgramCard(program));
+    });
+  } else {
+    visiblePrograms.forEach(program => {
+      fragment.append(createProgramCard(program));
+    });
+  }
+
   programGrid.append(fragment);
 }
 
@@ -268,6 +301,7 @@ async function loadPrograms() {
 seasonFilter.addEventListener("change", renderPrograms);
 guestFilter.addEventListener("change", renderPrograms);
 guestSearch.addEventListener("input", renderPrograms);
+seasonSeparatorsToggle.addEventListener("change", renderPrograms);
 
 sortButton.addEventListener("click", () => {
   ascending = !ascending;
