@@ -261,7 +261,7 @@ h1 {
 
 .search-filter input:focus {
   border-color: var(--accent);
-  background: #151515;
+  background: var(--control-bg);
 }
 
 .season-filter { display: grid; gap: 7px; min-width: 220px; }
