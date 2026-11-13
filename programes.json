@@ -704,6 +704,7 @@
     "temporada": "2024/25",
     "data": "2025-01-12",
     "convidat": "Oleguer Presas",
+    "lloc": "Centre social L'Obrera, Sabadell",
     "youtube": "https://www.youtube.com/watch?v=id57oM4V3JA",
     "spotify": "https://open.spotify.com/episode/5wAWijG52qBkGRegJ8Dijx",
     "ivoox": "https://go.ivoox.com/rf/137780712",
@@ -1105,6 +1106,178 @@
     "data": "2024-01-08",
     "convidat": "Marc Soler",
     "youtube": "https://www.youtube.com/watch?v=rM0NB_qzLlY",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 316,
+    "temporada": "2023/24",
+    "data": "2023-12-18",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=iYEGWwT9Fvw",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 315,
+    "temporada": "2023/24",
+    "data": "2023-12-11",
+    "convidat": "Martí Perarnau",
+    "youtube": "https://www.youtube.com/watch?v=sH_KFP5qYDc",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 314,
+    "temporada": "2023/24",
+    "data": "2023-12-04",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=c6AGr2tPKvI",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 313,
+    "temporada": "2023/24",
+    "data": "2023-11-27",
+    "convidat": "Carlo Padial",
+    "youtube": "https://www.youtube.com/watch?v=tPItxeAG7WQ",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 312,
+    "temporada": "2023/24",
+    "data": "2023-11-20",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=hhjcB8V3AbA",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 311,
+    "temporada": "2023/24",
+    "data": "2023-11-13",
+    "convidat": "Joel Parra",
+    "youtube": "https://www.youtube.com/watch?v=4-EPoOhwujo",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 310,
+    "temporada": "2023/24",
+    "data": "2023-11-06",
+    "convidat": "Valtonyc",
+    "youtube": "https://www.youtube.com/watch?v=dww2Gw41VXY",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 309,
+    "temporada": "2023/24",
+    "data": "2023-10-30",
+    "convidat": "Albert Pla",
+    "youtube": "https://www.youtube.com/watch?v=caSe_qhqmp4",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 308,
+    "temporada": "2023/24",
+    "data": "2023-10-21",
+    "convidat": "Joel Joan",
+    "esdeveniment": "Victoria x Podcast",
+    "lloc": "Teatre Victòria, Barcelona",
+    "youtube": "https://www.youtube.com/watch?v=m2x5XxnZdCs",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 307,
+    "temporada": "2023/24",
+    "data": "2023-10-16",
+    "convidat": "Spursito",
+    "youtube": "https://www.youtube.com/watch?v=LjqZlKpNHpc",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 306,
+    "temporada": "2023/24",
+    "data": "2023-10-09",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=BTS5oCM-KFA",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 305,
+    "temporada": "2023/24",
+    "data": "2023-10-02",
+    "convidat": "Josu Rodríguez",
+    "youtube": "https://www.youtube.com/watch?v=JiFz3Trjr-4",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 304,
+    "temporada": "2023/24",
+    "data": "2023-09-25",
+    "convidat": "Sergi Barjuan",
+    "youtube": "https://www.youtube.com/watch?v=aFAthEZJnBY",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 303,
+    "temporada": "2023/24",
+    "data": "2023-09-18",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=RzQ_agFVSx8",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 302,
+    "temporada": "2023/24",
+    "data": "2023-09-11",
+    "convidat": "Òscar Andreu",
+    "youtube": "https://www.youtube.com/watch?v=38b7Etn58sM",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 301,
+    "temporada": "2023/24",
+    "data": "2023-09-04",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=S2BePnJqP2U",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 300,
+    "temporada": "2022/23",
+    "data": "2023-06-27",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=D2DwYzxYgT4",
     "spotify": "",
     "ivoox": "",
     "apple": ""
