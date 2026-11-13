@@ -891,10 +891,220 @@
   },
   {
     "id": 338,
-    "temporada": "2024/25",
-    "data": "2024-12-23",
+    "temporada": "2023/24",
+    "data": "2024-06-10",
+    "convidat": "Edgar González",
+    "youtube": "https://www.youtube.com/watch?v=gtvzrTiOB6Q",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 337,
+    "temporada": "2023/24",
+    "data": "2024-06-03",
+    "convidat": "Xavi Daura",
+    "youtube": "https://www.youtube.com/watch?v=Eczuh0zmFWI",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 336,
+    "temporada": "2023/24",
+    "data": "2024-05-27",
     "convidat": null,
-    "youtube": "",
+    "youtube": "https://www.youtube.com/watch?v=pLNY43JZT5Y",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 335,
+    "temporada": "2023/24",
+    "data": "2024-05-20",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=xB8F88VN_eA",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 334,
+    "temporada": "2023/24",
+    "data": "2024-05-13",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=Qpq05vL16Ss",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 333,
+    "temporada": "2023/24",
+    "data": "2024-05-06",
+    "convidat": "Guillem Gisbert",
+    "youtube": "https://www.youtube.com/watch?v=5BdwMyDfp4k",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 332,
+    "temporada": "2023/24",
+    "data": "2024-04-29",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=hHhylNlVCg0",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 331,
+    "temporada": "2023/24",
+    "data": "2024-04-22",
+    "convidat": "Paco Seirul·lo",
+    "youtube": "https://www.youtube.com/watch?v=9uE83QA2daI",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 330,
+    "temporada": "2023/24",
+    "data": "2024-04-15",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=ieUuRX99RTw",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 329,
+    "temporada": "2023/24",
+    "data": "2024-04-08",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=LwdxxUC9GxM",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 328,
+    "temporada": "2023/24",
+    "data": "2024-03-25",
+    "convidat": "Quino Colom",
+    "youtube": "https://www.youtube.com/watch?v=504mXdHy7WU",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 327,
+    "temporada": "2023/24",
+    "data": "2024-03-18",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=22M_VcJzaYU",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 326,
+    "temporada": "2023/24",
+    "data": "2024-03-11",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=LkCgnzDqCdQ",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 325,
+    "temporada": "2023/24",
+    "data": "2024-03-04",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=62XGzPrw6Ys",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 324,
+    "temporada": "2023/24",
+    "data": "2024-02-26",
+    "convidat": "Berta Alomà",
+    "youtube": "https://www.youtube.com/watch?v=O8XGk_7xafo",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 323,
+    "temporada": "2023/24",
+    "data": "2024-02-19",
+    "convidat": "Mushkaa",
+    "youtube": "https://www.youtube.com/watch?v=JIK6FEhaL4Y",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 322,
+    "temporada": "2023/24",
+    "data": "2024-02-12",
+    "convidat": "Marta Corredera",
+    "youtube": "https://www.youtube.com/watch?v=f7V69ImGtQ0",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 321,
+    "temporada": "2023/24",
+    "data": "2024-02-05",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=G3sr6piUenE",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 320,
+    "temporada": "2023/24",
+    "data": "2024-01-29",
+    "convidat": "Dídac Plana",
+    "youtube": "https://www.youtube.com/watch?v=-fa2dzMmY0U",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 319,
+    "temporada": "2023/24",
+    "data": "2024-01-22",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=xex5NUADR34",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 318,
+    "temporada": "2023/24",
+    "data": "2024-01-15",
+    "convidat": null,
+    "youtube": "https://www.youtube.com/watch?v=IXoXzVN7jWI",
+    "spotify": "",
+    "ivoox": "",
+    "apple": ""
+  },
+  {
+    "id": 317,
+    "temporada": "2023/24",
+    "data": "2024-01-08",
+    "convidat": "Marc Soler",
+    "youtube": "https://www.youtube.com/watch?v=rM0NB_qzLlY",
     "spotify": "",
     "ivoox": "",
     "apple": ""
